@@ -32,7 +32,7 @@ namespace QUANLY_BHST.VIEW
             Bingding();
 
         }
-
+      
         private void Bingding()
         {
             txtMaHDB.DataBindings.Clear();
@@ -264,7 +264,7 @@ namespace QUANLY_BHST.VIEW
             Dis_End(true);
             Loat_KH();
             Loat_NV();
-
+            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
