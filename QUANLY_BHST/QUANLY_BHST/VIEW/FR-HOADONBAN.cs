@@ -291,5 +291,54 @@ namespace QUANLY_BHST.VIEW
                 return;
             FR_HOADONBAN_Load(sender, e);
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            Dis_End(false);
+            FR_HOADONBAN_Load(sender, e);
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            Dis_End(false);
+            Gan_Obj(Obj);
+            if (flag == 0)
+            {
+                try
+                {
+                    if (Obj_c.Add_Obj(Obj))
+                        MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Thêm Thất Bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+
+                try
+                {
+                    if (Obj_c.Up_Obj(Obj))
+                        MessageBox.Show("Sửa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Sửa Thất Bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //   SV_Ctr.UpdData(SV_dt);
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show(ee.Message);
+                }
+
+            }
+            FR_HOADONBAN_Load(sender, e);
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
