@@ -59,6 +59,7 @@
             this.cmbTenNHV = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSohoadon = new System.Windows.Forms.TextBox();
+            this.Ckchu = new System.Windows.Forms.CheckBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
@@ -85,15 +86,17 @@
             this.label8.Size = new System.Drawing.Size(52, 15);
             this.label8.TabIndex = 68;
             this.label8.Text = "Bằng chữ";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // LbBangchu
             // 
             this.LbBangchu.AutoSize = true;
-            this.LbBangchu.Location = new System.Drawing.Point(369, 27);
+            this.LbBangchu.Location = new System.Drawing.Point(383, 26);
             this.LbBangchu.Name = "LbBangchu";
             this.LbBangchu.Size = new System.Drawing.Size(33, 15);
             this.LbBangchu.TabIndex = 69;
             this.LbBangchu.Text = "VNĐ";
+            this.LbBangchu.Click += new System.EventHandler(this.LbBangchu_Click);
             // 
             // txtMaHDB
             // 
@@ -166,9 +169,11 @@
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(90, 22);
             this.btnLuu.Text = "Lưu Dữ Liệu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.Ckchu);
             this.groupBox3.Controls.Add(this.txttongtien);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label8);
@@ -179,6 +184,7 @@
             this.groupBox3.TabIndex = 71;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tổng Tiền";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // btnHuy
             // 
@@ -187,6 +193,7 @@
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(118, 22);
             this.btnHuy.Text = "Bỏ Qua Thao Tác";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // toolStripSeparator7
             // 
@@ -341,6 +348,16 @@
             this.txtSohoadon.Size = new System.Drawing.Size(47, 20);
             this.txtSohoadon.TabIndex = 57;
             // 
+            // Ckchu
+            // 
+            this.Ckchu.AutoSize = true;
+            this.Ckchu.Location = new System.Drawing.Point(338, 27);
+            this.Ckchu.Name = "Ckchu";
+            this.Ckchu.Size = new System.Drawing.Size(15, 14);
+            this.Ckchu.TabIndex = 71;
+            this.Ckchu.UseVisualStyleBackColor = true;
+            this.Ckchu.CheckedChanged += new System.EventHandler(this.Ckchu_CheckedChanged);
+            // 
             // FR_HOADONBAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,5 +415,6 @@
         private System.Windows.Forms.ComboBox cmbTenNHV;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSohoadon;
+        private System.Windows.Forms.CheckBox Ckchu;
     }
 }
