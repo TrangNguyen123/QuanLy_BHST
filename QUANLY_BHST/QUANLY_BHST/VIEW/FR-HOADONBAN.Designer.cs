@@ -166,6 +166,7 @@
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(90, 22);
             this.btnLuu.Text = "Lưu Dữ Liệu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // groupBox3
             // 
@@ -187,6 +188,7 @@
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(118, 22);
             this.btnHuy.Text = "Bỏ Qua Thao Tác";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // toolStripSeparator7
             // 
@@ -270,6 +272,7 @@
             this.btnInHoaDon.Name = "btnInHoaDon";
             this.btnInHoaDon.Size = new System.Drawing.Size(80, 22);
             this.btnInHoaDon.Text = "In Dữ Liệu";
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // dgvHDBan
             // 
